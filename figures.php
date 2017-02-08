@@ -4,8 +4,6 @@ header('Content-Type: text/html; charset=utf-8');
 
 $x = $_GET['x'];
 
-
-
 $a = 1;
  
 $b = 1;
@@ -48,8 +46,6 @@ if($x!='')
 
 	}
 } 
-else echo "<p style='color: red;'>Введите задуманное число!</p>";
-
 
 ?>
 
