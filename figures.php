@@ -29,7 +29,7 @@ while($x > $a){
 <input type="submit" value="go">
 
 </form>
-
+<!--Пустая строка нам не нужна, поэтому делаем проверку-->
 <?php if($x!=null): ?>
 
 	<?php if($x==$a): ?>
