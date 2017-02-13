@@ -1,7 +1,9 @@
 <?php
 
-$animals = array('Asia'=>array('Mammuthus columbi','Maclura pomifera','Mammuthus meridionalis','Bison'), 				 'Amerika'=>array('Homotherium serum','Gymnocladus dioicus','Smilodon populator'), 
-				 'Europe'=>array('Panthera tigris','Felis virgata','Tigris regalis','Chondrichthyes'), 				   'Afrika'=>array('Arctodus simus','Ursus maritimus','Acanthodii','Arctodus pristinus'));
+$animals = array('Asia'=>array('Mammuthus columbi','Maclura pomifera','Mammuthus meridionalis','Bison'), 
+		 'Amerika'=>array('Homotherium serum','Gymnocladus dioicus','Smilodon populator'), 
+		 'Europe'=>array('Panthera tigris','Felis virgata','Tigris regalis','Chondrichthyes'), 
+		 'Afrika'=>array('Arctodus simus','Ursus maritimus','Acanthodii','Arctodus pristinus'));
 
 //Сортируем в отдельный массив имена животных из двух слов
 $double_names=[];
