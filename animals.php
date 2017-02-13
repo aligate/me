@@ -46,7 +46,6 @@ while(count($new_values)<count($all_names)){
 	$new_values[]='';
 	shuffle($new_values);
 } 
-
 foreach($animals as $kont=>$animal){
 	echo "<h2>$kont</h2>";
 	shuffle($animal);
