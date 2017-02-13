@@ -15,7 +15,7 @@ foreach($animals as $kont =>$animal){
 }
 
 // Смешиваем части имен, создаем новые имена и выводим их на экран
-echo '<h3>Fantasy animals</h3>';
+echo '<h1>Fantasy animals</h1>';
 $new_keys =[];
 $new_values=[];
 		for($i=0; $i<count($double_names);$i++){
