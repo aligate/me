@@ -4,7 +4,6 @@ $animals = array('Asia'=>array('Mammuthus columbi','Maclura pomifera','Mammuthus
 				 'Europe'=>array('Panthera tigris','Felis virgata','Tigris regalis','Chondrichthyes'), 				   'Afrika'=>array('Arctodus simus','Ursus maritimus','Acanthodii','Arctodus pristinus'));
 
 //Сортируем в отдельный массив имена животных из двух слов
-
 $double_names=[];
 foreach($animals as $kont =>$animal){
 	foreach($animal as $item){
@@ -35,7 +34,6 @@ echo '<hr>';
 	
 // Дополнительно. 
 // Участвуют все имена исходного массива
-
 $all_names=[];
 foreach($animals as $kont =>$animal){
 	foreach($animal as $item){
@@ -46,7 +44,6 @@ while(count($new_values)<count($all_names)){
 	$new_values[]='';
 } 
 shuffle($new_values);
-
 foreach($animals as $kont=>$animal){
 	echo "<h2>$kont</h2>";
 	shuffle($animal);
