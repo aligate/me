@@ -21,7 +21,6 @@ $info = [];
 $info['title'] = cut($file, '<span>', '</span>');
 
 // первое предложение статьи
-
 preg_match('/^(.*?[?!.])(?=\s*[A-ZА-ЯЁ]|$)/s', cut($file, '<div class="content html_format">', '<br/>'), $res);
 $info['text'] = $res[0];
 if($info['text']===null) $info['text'] = 'image';
