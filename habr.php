@@ -9,7 +9,6 @@ function cut($haystack, $before, $after){
 	return $pie[0];
 	
 }
-
 if(isset($_GET['id'])){
 $id = $_GET['id'];
 $file = file_get_contents("https://habrahabr.ru/post/$id/");
@@ -53,10 +52,8 @@ for($i=1; $i < count($pie_tag); $i++){
 
 ?>
 <form action="" >
-
 <input type="text" name ="id" size= "30" placeholder = "Введите идентификатор поста">
 <input type="submit" value="go">
-
 </form>
 <br/>
 
