@@ -22,10 +22,10 @@ $info['title'] = cut($file, '<span>', '</span>');
 // первое предложение статьи
 preg_match('/^(.*?[?!.])(?=\s*[A-ZА-ЯЁ]|$)/s', cut($file, '<div class="content html_format">', '<br/>'), $res);
 $info['text'] = $res[0];
-if($info['text']===null) $info['text'] = 'image';
+if($info['text'] === null) $info['text'] = 'image';
 
 // дату публикации
-$info['date']= cut($file, '<span class="post__time_published">', '</span>');
+$info['date'] = cut($file, '<span class = "post__time_published">', '</span>');
  
 // рейтинг статьи
 $info['rating'] = cut($file, '"user-rating__value">', '</span>');
@@ -38,22 +38,22 @@ $info['stars'] = cut($file, 'публикацию в избранное">', '</s
  
 // теги, если они есть (выводятся рядом с заголовком статьи)
 $pie_tag = explode('<div class="hubs">', $file, 2);
-if(count($pie_tag)===1){
-	$info['status']= 'error';
-} else{
+if(count($pie_tag) === 1){
+	$info['status'] = 'error';
+} else {
 $pie_tag = explode('</div>', $pie_tag[1]);
-$pie_tag = explode('}">',$pie_tag[0]);
-for($i=1; $i < count($pie_tag); $i++){
-	$result = explode('</a><span class="profiled_hub"', $pie_tag[$i]);
-	$info['tags'][]=$result[0];
+$pie_tag = explode('}">', $pie_tag[0]);
+for($i=1; $i < count($pie_tag); $i++) {
+	$result = explode('</a><span class = "profiled_hub"', $pie_tag[$i]);
+	$info['tags'][] = $result[0];
 		}	
 	}
 }
 
 ?>
 <form action="" >
-<input type="text" name ="id" size= "30" placeholder = "Введите идентификатор поста">
-<input type="submit" value="go">
+<input type="text" name ="id" size= "30" placeholder= "Введите идентификатор поста">
+<input type="submit" value ="go">
 </form>
 <br/>
 
