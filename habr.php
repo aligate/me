@@ -11,7 +11,7 @@ function cut($haystack, $before, $after){
 }
 if(isset($_GET['id'])){
 $id = $_GET['id'];
-$file = file_get_contents("https://habrahabr.ru/post/$id/");
+$file = file_get_contents("https://habrahabr.ru/post/$id");
 
 //Создаем массив с требуемыми данными
 $info = [];
